@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formulário Acadêmico</title>
+    </head>
+
+<body>
+    <h1>Formulário</h1>
+    <form action="page.php" method="get"> </form>
+        <fieldset>
+             <legend>Dados Pessoais</legend>
+             <label for="name">Nome:</label>
+             <input type="text" id="name" name="name">
+             <br><br>
+             <label for="aniversario">Aniversario:</label>
+             <input type="date" id="aniversario" name="aniversario">
+             <br><br>
+             <label for="email">Email:</label>
+             <input type="email" id="email" name="email">
+             <br><br>
+             <label for="email">Contato:</label>
+             <input type="numero" id="telefone" name="telefone">
+             <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Dados Acadêmicos</legend>
+           <label for="id_curso">Curso:</label>
+           <select name="opções" id="Curso">
+               <option value="Ads">Análise de Dados</option>
+               <option value="Ciência de Dados">Ciencias de Dados</option>
+            </select>
+            <br><br>
+        <label>Semestre</label>
+        <input type="radio" id="id_sem1" name="semestre" value="1">
+        <label for="id_sem1">1º</label>
+        <input type="radio" id="id_sem2" name="semestre" value="2">
+        <label for="id_sem2">2º</label>
+        <input type="radio" id="id_sem3" name="semestre" value="3">
+        <label for="id_sem3">3º</label>
+        <input type="radio" id="id_sem4" name="semestre" value="4">
+        <label for="id_sem4">4º</label>
+        <br><br>
+        </fieldset>
+        <fieldset>
+               <legend>Dados Complementares</legend>
+               <label for="id_trabalha">Trabalha atualmente:</label>
+               <input type="checkbox" id="id_trabalha" name="opções" value="sim">
+               <label for=" id_trabalha">sim</label>
+               <input type="checkbox" id="id_trabalha" name="opções" value="não">
+               <label for=" id_trabalha">não</label>
+               <br><br>
+                <label>Faça uma breve descrição:</label>
+                <br><br>
+               <textarea rows="4" cols="80" font-family="Arial"></textarea>
+        </fieldset>
+        <input type="submit" value="Salvar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
